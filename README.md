@@ -2,6 +2,8 @@
 
 Display a beautiful page when blocking a Nemesida WAF request with additional information instead of a normal 403 page. To activate the page, follow these steps:
 
+![Nemesida WAF Custom 403 Page](https://user-images.githubusercontent.com/99513957/214073040-3c8f5f96-55c0-4eac-a6ff-653499cde41a.png)
+
 1. Create a file with custom page settings (e.g. <code>/etc/nginx/snippets/custom_pages.conf</code>):
 ```
 ## Error pages
