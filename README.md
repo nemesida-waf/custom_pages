@@ -17,10 +17,11 @@ location /403.html {
         proxy_no_cache 1;
         proxy_cache_bypass 1;
 
-        add_header X-Request-ID $request_id always;
-        add_header Host $host always;
-        add_header X-Remote-IP $remote_addr always;
-        add_header NemesidaWAF-BT $nwaf_block_type always;
+        add_header host $host always;
+        add_header x-request-id $request_id always;
+        add_header x-remote-ip $remote_addr always;
+        add_header nemesidawaf-bt $nwaf_block_type always;
+        add_header nemesidawaf-cc $nwaf_cc always;
 
 }
 ```
